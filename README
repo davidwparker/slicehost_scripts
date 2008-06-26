@@ -1,0 +1,20 @@
+Author: David Parker
+Last Modified: 25 Jun 2008
+E-Mail: davidwparker *no_spamming_at* gmail *more_dot_no_spamming* com
+
+These are some really crude scripts that I compiled from Pickled Onion's tutorials for going from a fresh Ubuntu install to most things ready to go.
+
+Here are a few things that you need "to-do" before you start:
+* Modify /config/iptables.txt to reflect the ssh port you would like to use (currently 9999).  
+* Modify /config/main.conf for your domain.
+* Modify /config/mysql.conf if you want to change from the default port (3306)
+* Modify /config/sshd_config.txt to change the ssh port from 9999
+* Add your id_rsa.pub to config
+* Add your index.html, 404.html, and 500.html to the main directory (slicehost_scripts).
+
+USAGE:
+Basically, I put all this stuff together (as stated above), then I tar it up (as slicehost_scripts), upload it to my server (generally through scp), login to the fresh server as root, untar, then go into slicehost_scripts and run  the completeInstall script.
+
+I'm still rather Newbish at a lot of this stuff, so please please help me out and help me to improve the scripts.  I've also provided the major steps broken down into multiple files.
+
+I hope this helps any of you other slicehosters out there!
